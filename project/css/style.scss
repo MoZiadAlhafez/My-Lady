@@ -1,0 +1,17 @@
+@import './sass/Helpers/Variables';
+@import './sass/Helpers/Classes';
+@import './sass/components/navbar';
+@import './sass/components/Text-Img';
+@import './sass/Pages/homePage';
+@import './sass/Pages/shoping';
+@import './sass/Pages/Contact';
+@import './sass/components/Footer';
+body {
+  font-family: 'Cairo', sans-serif;
+  text-transform: capitalize;
+  overflow-x: hidden
+}
+
+.input-field>label{
+  z-index: -1;
+}

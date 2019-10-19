@@ -1,0 +1,22 @@
+.page-footer{
+    ul li a{color: $lightTextColor}
+    .footer-copyright{
+        .row{
+                margin-bottom: 0;
+                ul{
+                    display: flex ;
+                    justify-content: space-around ;
+                    align-items: center ;
+                    
+                }
+                i{
+                    color: #fff;
+                    font-size: 22px;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.2,1.2);
+                    }
+            }
+        }
+    }
+}

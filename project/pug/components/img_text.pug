@@ -1,0 +1,14 @@
+mixin ImgTextSection(title, img)
+    section(class='text-img-section')
+            .container
+                //- h3.section-title.lg-hidden.md-hidden.xl-hidden= title
+                .row
+                    .col.s6(data-aos="fade-up-right" data-aos-duration="3000")
+                        .img 
+                            img(src=img)
+                    .col.s6(data-aos="fade-up-left" data-aos-duration="3000")
+                        .text
+                            h3= title
+                            p Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, But Also The Leap Into Electronic Typesetting, Remaining Essentially Unchanged. It Was Popularised In The 1960s With The Release Of Letraset Sheets Containing Lorem Ipsum Passages, And More Recently With Desktop Publishing Software Like Aldus PageMaker Including Versions Of Lorem Ipsum.
+                            <a class="waves-effect waves-light btn"> <i class="material-icons left">add_shopping_cart</i> shoping now </a>
+                    

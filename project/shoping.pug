@@ -1,0 +1,98 @@
+include ./pug/Helpers/Variables
+
+include ./pug/Data/SocialMedia
+include ./pug/components/text_img
+
+doctype
+html
+    head
+        include ./pug/Helpers/HeadCalls
+        title Weather App
+    body
+        include ./pug/components/Navbar
+        
+        +TextImgSection('online shoping', './images/Section/undraw_add_to_cart_vkjp.svg')
+        
+        section.shop(data-aos="fade-up")    
+            .container
+                .types-nav
+                    <div class="row">
+                        <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s3"><a href="#test1" class="active">dress</a></li>
+                            <li class="tab col s3"><a href="#test2">t-shirts</a></li>
+                            <li class="tab col s3"><a href="#test3">skirts</a></li>
+                            <li class="tab col s3"><a href="#test4">Trousers</a></li>
+                        </ul>
+                        </div>
+                        <div id="test1" class="col s12 content">
+                            .row
+                                - for(var x = 0; x < 6; x++)
+                                    .col.s3
+                                        .clothe-card
+                                            .front
+                                                img(src='./images/Slider/slide1.jpg')
+                                                h6.product-title product title name
+                                            .back
+                                                h6 title  name
+                                                ul
+                                                    li brand : some text for test
+                                                    li sizes : s / m / l / xl / xxl / 3xl / 4xl 
+                                                    li price :  48$
+                                                <a class="waves-effect waves-light btn"><i class="material-icons left">add_shopping_cart</i>buy</a>
+                        </div>
+                        <div id="test2" class="col s12 content">
+                            .row
+                                - for(var x = 0; x < 6; x++)
+                                    .col.s3
+                                        .clothe-card
+                                            .front
+                                                img(src='./images/Slider/slide2.jpg')
+                                                h6.product-title product title name
+                                            .back
+                                                h6 title  name
+                                                ul
+                                                    li brand : some text for test
+                                                    li sizes : s / m / l / xl / xxl / 3xl / 4xl 
+                                                    li price :  48$
+                                                <a class="waves-effect waves-light btn"><i class="material-icons left">add_shopping_cart</i>buy</a>
+                        </div>
+                        <div id="test3" class="col s12 content">
+                            .row
+                                - for(var x = 0; x < 6; x++)
+                                    .col.s3
+                                        .clothe-card
+                                            .front
+                                                img(src='./images/Slider/slide3.jpg')
+                                                h6.product-title product title name
+                                            .back
+                                                h6 title  name
+                                                ul
+                                                    li brand : some text for test
+                                                    li sizes : s / m / l / xl / xxl / 3xl / 4xl 
+                                                    li price :  48$
+                                                <a class="waves-effect waves-light btn"><i class="material-icons left">add_shopping_cart</i>buy</a>
+                        </div>
+                        <div id="test4" class="col s12 content">
+                            .row
+                                - for(var x = 0; x < 6; x++)
+                                    .col.s3
+                                        .clothe-card
+                                            .front
+                                                img(src='./images/Slider/slide4.jpg')
+                                                h6.product-title product title name
+                                            .back
+                                                h6 title  name
+                                                ul
+                                                    li brand : some text for test
+                                                    li sizes : s / m / l / xl / xxl / 3xl / 4xl 
+                                                    li price :  48$
+                                                <a class="waves-effect waves-light btn"><i class="material-icons left">add_shopping_cart</i>buy</a>
+                        </div>
+                    </div>
+       
+        
+        
+        include ./pug/components/Modals
+        include ./pug/components/Footer
+        include ./pug/Helpers/FooterCalls

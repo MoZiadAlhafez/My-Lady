@@ -1,0 +1,60 @@
+.steps{
+    padding-top: 70px;
+    padding-bottom: 40px; 
+    text-align: center;
+    .step{
+      span{
+        color: $PinkColor;
+        font-weight: bold;
+        border-right: 10px solid $PinkColor;
+        border-left: 10px solid $PinkColor;
+        border-radius: 50%;
+        font-size: 50px;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+  
+      }
+      .step-title{
+        color: $PinkColor;
+      }
+      p{
+        margin-top: 20px;
+        color: $DarkTextColor
+      }
+    }
+  }
+  
+  
+  .fearures{
+    padding-top: 70px;
+    padding-bottom: 40px; 
+    .img{
+      text-align: center;
+      img{width: 90%;}
+    }
+    i{color: $PinkColor; font-size: 70px;}
+    .title{color: $PinkColor}
+    p{color: $DarkTextColor}
+  }
+  
+  
+  .subscribe{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    text-align: center;
+    .row{
+      display: flex;
+      align-items: center;
+  
+    }
+    i{color: $PinkColor; font-size: 70px;}
+    .title{color: $PinkColor}
+    p{color: $DarkTextColor; width:80%; margin: 20px auto 0}
+    .input-field{
+      text-align: center;
+      color: $PinkColor;
+      width:80%; margin: 20px auto 0
+    }
+  }

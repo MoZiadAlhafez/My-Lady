@@ -1,0 +1,19 @@
+include ../Data/SiteLinks
+.navbar-fixed
+  <nav>
+    .container
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">#{ThemeName}</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          - for (var link = 0; link < NavBarLinks.length; link++)
+            li: a(href=NavBarLinks[link].url)= NavBarLinks[link].text
+          li: a(class="waves-effect waves-light btn modal-trigger" href="#join") join
+          li: a(class="waves-effect waves-light btn modal-trigger" href="#login") log in
+        </ul>
+      </div>
+  </nav>
+<ul class="sidenav" id="mobile-demo">
+  - for (var link = 0; link < NavBarLinks.length; link++)
+    li: a(href=NavBarLinks[link].url)= NavBarLinks[link].text
+</ul>

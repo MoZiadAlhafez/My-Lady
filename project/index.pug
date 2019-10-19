@@ -1,0 +1,71 @@
+include ./pug/Helpers/Variables
+include ./pug/components/text_img
+include ./pug/components/img_text
+doctype
+html
+    head
+        include ./pug/Helpers/HeadCalls
+        title #{ThemeName} | home
+    body
+        include ./pug/components/Navbar
+
+        <div class="carousel carousel-slider" data-aos="fade-up" data-aos-duration="3000">
+            <a class="carousel-item" href="#one!"><img src="./images/Slider/slide1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="./images/Slider/slide2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="./images/Slider/slide3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="./images/Slider/slide4.jpg"></a>
+        </div>
+        +TextImgSection('online shoping', './images/Section/undraw_online_shopping_ga73.svg')
+
+
+        section.steps
+            .container
+                .row
+                    - for (var x = 0; x < 4; x++)
+                        .col.s3
+                            .step(data-aos="fade-up" data-aos-duration= x * 1000)
+                                span= x + 1
+                                h5.step-title online shoping
+                                p Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown
+
+        
+        +ImgTextSection('online shoping', './images/Section/undraw_window_shopping_b96y.svg')
+
+                            
+        section.fearures
+            .container
+                .row
+                    .col.s3(data-aos="fade-up-right" data-aos-duration="3000")
+                        i.fab.fa-cc-visa
+                        h4.title online buy
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                    .col.s6(data-aos="fade-up" data-aos-duration="3000")
+                        .img
+                            img(src='./images/Section/undraw_successful_purchase_uyin.svg')
+                    .col.s3(data-aos="fade-up-left" data-aos-duration="3000")
+                        i.fa.fa-truck
+                        h4.title dlivery
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+        section.text-img-section.subscribe
+            .container
+                .row
+                    .col.s6(data-aos="fade-up-right" data-aos-duration="3000")
+                        i.fa.fa-newspaper
+                        h4.title subscribe news us
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                        .subscribe-form
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">email</label>
+                                <a class="waves-effect waves-light btn">subscribe</a>
+                            </div>
+                            
+                    .col.s6(data-aos="fade-up-left" data-aos-duration="3000")
+                        .img
+                            img(src='./images/Section/undraw_arrived_f58d.svg')
+
+        
+        include ./pug/components/Modals
+        include ./pug/components/Footer
+        include ./pug/Helpers/FooterCalls

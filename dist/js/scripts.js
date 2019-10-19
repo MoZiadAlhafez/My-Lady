@@ -1,0 +1,2 @@
+$(document).ready(function(){$(".sidenav").sidenav()}),$(".carousel.carousel-slider").carousel({fullWidth:!0,indicators:!0});var HeightWindow=$(window).outerHeight(),NavHeight=$(".navbar-fixed").outerHeight();$(".carousel.carousel-slider").outerHeight(HeightWindow-NavHeight),$(document).ready(function(){$(".tabs").tabs()}),$(document).ready(function(){$(".modal").modal()}),AOS.init();
+//# sourceMappingURL=scripts.js.map
